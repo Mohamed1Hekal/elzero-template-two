@@ -791,3 +791,251 @@ main.landing {
     margin-bottom: 50px;
 }
 /* end quote section  */
+
+
+/* start pricing section  */
+.pricing .offers-place {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+.pricing .offers-place .offer {
+    background-color: #FCFCFC;
+    padding: 20px 0;
+    border-top: 1px solid var(--main-color);
+}
+.pricing .offers-place .offer .head {
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .offers-place .offer .head h4 {
+    font-weight:normal ;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.pricing .offers-place .offer .head span {
+    display: block;
+    font-weight:bold ;
+    font-size: 50px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+.pricing .offers-place .offer .head span::before {
+    content: "$";
+    font-size: 15px;
+    position: relative;
+    top: -30px;
+    left: -10px;
+
+}
+.pricing .offers-place .offer .head span::after {
+    content: "/Mo";
+    font-size: 15px;
+    position: relative;
+    right: -8px;
+    bottom: 0;
+
+}
+.pricing .offers-place .offer ul {
+    padding:  0 30px;
+}
+.pricing .offers-place .offer ul li {
+    padding: 15px;
+}
+.pricing .offers-place .offer ul li:not(:last-child) {
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .offers-place .foot {
+    padding: 30px 0 20px;
+    border-top: 1px solid var(--main-color);
+}
+.pricing .offers-place .foot button {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: purple;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* end pricing section  */
+/* START subscribe SECTION  */
+.subscribe {
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+.subscribe::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0,0 , 60%);
+    z-index: 1;
+}
+.subscribe .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.subscribe form {
+    border: 2px solid white;
+    background-color: transparent;
+}
+.subscribe form i {
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+    padding: 10px;
+}
+.subscribe form input {
+    caret-color: var(--main-color);
+    color: white;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+}
+.subscribe form input:focus {
+    outline: none;
+}
+
+.subscribe form  a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--main-color);
+}
+.subscribe form + p {
+    color: white;
+    margin-left: 50px;
+    font-size: 16px;
+}
+/* END subscribe SECTION  */
+/* start contact us section  */
+
+.contact-us .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-us .contact .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: end;
+}
+.contact-us .contact .inputs input:not(.submit),
+textarea{
+    display: block;
+    border-radius: none;
+    border: 1px #ccc solid;
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact-us .contact .inputs input:last-child:not(.submit) {
+    height: 300px;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+input[type="submit"] {
+    display: block;
+    color: white;
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    text-align: end;
+}
+.contact-us .contact .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.contact-us .contact .text div:first-child,
+.contact-us .contact .text div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.contact-us .contact .text h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.contact-us .contact .text span {
+    color: #777;
+    font-style: italic;
+
+}
+@media (max-width:1199px) {
+    .contact-us .contact {
+        flex-direction: column-reverse ;
+        justify-content: center;
+    }
+    .contact * {
+        align-self: center;
+    }
+}
+
+footer {
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+footer::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0,0 , 60%);
+    z-index: 1;
+}
+footer .container {
+    height: 100%;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container > div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+footer .container > div > h3 {
+    font-weight: normal;
+    font-size: 25px;
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+}
+footer .container div > .social i{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+footer .container > img {
+    width: 150px;
+}
+/* end contact us section  */
