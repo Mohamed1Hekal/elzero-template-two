@@ -1,3 +1,2 @@
-# Templates_of_practicing
-practice on the templates to get better
-#### https://mohamed1hekal.github.io/Templates_of_practicing/
+# elzero-template-three
+this is the template three on the elzero channel
